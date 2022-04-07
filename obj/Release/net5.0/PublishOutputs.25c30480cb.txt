@@ -1,6 +1,7 @@
 E:\code stuff\Northwind\bin\Release\net5.0\publish\Northwind.exe
 E:\code stuff\Northwind\bin\Release\net5.0\publish\wwwroot\css\client.css
 E:\code stuff\Northwind\bin\Release\net5.0\publish\wwwroot\js\client.js
+E:\code stuff\Northwind\bin\Release\net5.0\publish\wwwroot\toast.wav
 E:\code stuff\Northwind\bin\Release\net5.0\publish\appsettings.Development.json
 E:\code stuff\Northwind\bin\Release\net5.0\publish\appsettings.json
 E:\code stuff\Northwind\bin\Release\net5.0\publish\Northwind.dll

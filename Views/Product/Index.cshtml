@@ -1,20 +1,24 @@
 @using Northwind.Models
-@model ProductViewModel
+@model IEnumerable<Product>
 
-@* <div class="bg-primary m-1 p-1 text-white"><h4>@Model.category.CategoryName Details</h4></div> *@
-
-@if (Model.Product.Count() == 0)
-{
-    <p>There are no products</p>
-}
-else
-{
-    <ul class="list-group">
-        @foreach (Product product in Model.Product)
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Name: </th>
+            <th scope="col">Unit Price: </th>
+            <th scope="col">Units in Stock: </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Product product in Model)
         {
-            <li class="list-group-item">
-                Name: @product.ProductName | Cost: $@product.UnitPrice | Units Left: @product.UnitsInStock
-            </li>
+            <tr>
+                <th scope="row" class="list-group-item">@product.ProductName</th>
+                <td>$@product.UnitPrice</td>
+                <td>@product.UnitsInStock</td>
+            </tr>
         }
-    </ul>
-}
+    </tbody>
+</table>
+
+

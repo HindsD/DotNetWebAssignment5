@@ -68,3 +68,7 @@ E:\code stuff\Northwind\obj\Release\net5.0\Northwind.dll
 E:\code stuff\Northwind\obj\Release\net5.0\ref\Northwind.dll
 E:\code stuff\Northwind\obj\Release\net5.0\Northwind.pdb
 E:\code stuff\Northwind\obj\Release\net5.0\Northwind.genruntimeconfig.cache
+E:\code stuff\Northwind\obj\Release\net5.0\Razor\Views\Product\Index.cshtml.g.cs
+E:\code stuff\Northwind\obj\Release\net5.0\Razor\Views\Product\Discount.cshtml.g.cs
+E:\code stuff\Northwind\obj\Release\net5.0\Razor\Views\Customer\AddCustomer.cshtml.g.cs
+E:\code stuff\Northwind\obj\Release\net5.0\Razor\Views\Customer\Register.cshtml.g.cs

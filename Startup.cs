@@ -10,6 +10,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Northwind.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace Northwind
 {
@@ -31,6 +32,8 @@ namespace Northwind
         {
             // this is where we use the config info for our connection string
             services.AddDbContext<NorthwindContext>(options => options.UseSqlServer(Configuration["Data:Northwind:ConnectionString"]));
+            services.AddDbContext<AppIdentityDbContext>(options => options.UseSqlServer(Configuration["Data:AppIdentity:ConnectionString"]));
+            services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<AppIdentityDbContext>().AddDefaultTokenProviders();
             services.AddControllersWithViews();
         }
 
@@ -44,6 +47,8 @@ namespace Northwind
 
             app.UseStaticFiles();
             app.UseRouting();
+            app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
